@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
 
+:root{
+    
+    --black : #2E1C2B;
+    --white: #ffffff;
+} 
+
 body {
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    color: var(--white);
     font-family: 'amatic sc', sans-serif;
 }
 
@@ -12,7 +18,7 @@ body {
 .header-wrapper {
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(-45deg, #050404, #2E1C2B, #4A1942, #893168);
+    background: linear-gradient(-45deg, #050404, var(--black), #4A1942, #893168);
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -39,10 +45,10 @@ h2 {
 
 .social-media a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
     font-size: 24px;
     padding: 1rem 4rem;
-    border: 1px solid #ffffff;
+    border: 1px solid var(--white);
     min-width: 4rem;
     display: flex;
     justify-content: center;
@@ -51,8 +57,8 @@ h2 {
 }
 
 a:hover {
-    color: #2E1C2B;
-    background-color: #ffffff;
+    color: var(--black);
+    background-color: var(--white);
 }
 
 @keyframes backgroundTransition {
@@ -91,7 +97,7 @@ a:hover {
 .checkbox .trace {
     width: 50px;
     height: 2px;
-    background-color: white;
+    background-color: var(--white);
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -126,7 +132,7 @@ a:hover {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px white;
+    box-shadow: 0px 0px 0px 0px var(--white);
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
@@ -152,7 +158,7 @@ a:hover {
 
 .menu-items ul li a{
     margin: 10px 0;
-    color: #2E1C2B;
+    color: var(--black);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -163,7 +169,7 @@ a:hover {
 
 #toggle:checked + .checkbox .trace:nth-child(1) {
     transform: rotate(45deg);
-    background-color: #2E1C2B;
+    background-color: var(--black);
     top: 47px;
 }
 
@@ -176,16 +182,16 @@ a:hover {
 
 #toggle:checked + .checkbox .trace:nth-child(3) {
     transform: rotate(-45deg);
-    background-color: #2E1C2B;
+    background-color: var(--black);
     top: 48px;
 }
 
 #toggle:checked + .checkbox {
-    background-color: white;
+    background-color: var(--white);
 }
 
 #toggle:checked ~ .menu{
-    box-shadow: 0px 0px 0px 100vmax white;
+    box-shadow: 0px 0px 0px 100vmax var(--white);
     z-index: 1;
 }
 
@@ -225,7 +231,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     filter: grayscale(0.5);
-    color: white;
+    color: var(--white);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -252,7 +258,7 @@ a:hover {
     height: 100px;
     width: 100px;
     display: block;
-    border: 1px solid white;
+    border: 1px solid var(--white);
     opacity: 0;
     transition: 0.3s;
 }
@@ -295,7 +301,7 @@ a:hover {
 .footer {
     width: 100%;
     height: 100px;
-    background-color: #2E1C2B;
+    background-color: var(--black);
     display: flex;
     justify-content: center;
     align-items: center;
